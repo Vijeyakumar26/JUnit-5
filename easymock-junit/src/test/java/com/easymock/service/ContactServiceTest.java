@@ -30,7 +30,7 @@ public class ContactServiceTest {
 		
 		contactService.setContactdao(daoProxy);
 		
-		String nameById = contactService.getNameById(101);
+		String nameById = contactService.getNameById(102);
 		
 		assertNotNull(nameById);
 	}
