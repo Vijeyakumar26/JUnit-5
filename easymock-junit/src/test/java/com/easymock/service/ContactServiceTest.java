@@ -1,6 +1,7 @@
 package com.easymock.service;
 
 import static org.junit.gen5.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.easymock.EasyMock;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,6 +23,8 @@ public class ContactServiceTest {
 		EasyMock.expect(daoProxy.findNameById(101)).andReturn("Ashok");
 		
 		EasyMock.expect(daoProxy.findNameById(102)).andReturn("Anish");
+		
+		EasyMock.replay(daoProxy);
 		
 		ContactServiceImpl contactService = new ContactServiceImpl();
 		
