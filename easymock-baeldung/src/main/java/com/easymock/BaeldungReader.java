@@ -5,7 +5,7 @@ import java.util.List;
 public class BaeldungReader {
 
 	private ArticleReader articleReader;
-	private IArticleWriter articleWriter;
+	private ArticleWriter articleWriter;
 
 	// constructors
 
