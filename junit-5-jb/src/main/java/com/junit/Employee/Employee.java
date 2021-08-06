@@ -3,7 +3,7 @@ package com.junit.Employee;
 public class Employee {
 	 private Integer id;
 	 private String name;
-	 
+	 RestService restService;
 	public Employee() {}
 	 
 	public Employee(Integer id, String name) {
